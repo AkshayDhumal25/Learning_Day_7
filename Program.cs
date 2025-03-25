@@ -284,3 +284,41 @@
 //        obj.show(); // Output: D::Show()
 //    }
 //}
+
+
+//************************************ Extension Methods ****************************
+//using System;
+//using Learning_Day_7;
+//namespace Demo
+//{
+//    class Program
+//    {
+//        static void Main()
+//        {
+//            string strName = "akshay";
+//            //string result = strName.ChangeFirstLetterCase();
+//            string result = stringHelper.ChangeFirstLetterCase(strName);
+//            Console.WriteLine(result);
+//        }
+//    }
+//}
+
+//**************** Language Integrated Query **********************
+//namespace linq
+//{
+//    class Program
+//    {
+//        public static void Main()
+//        {
+//            int[] arr = { 12, 34, 67, 39, 8, 61, 74, 82, 97, 27, 50 };
+//            var brr = from i in arr where i > 40 orderby i descending select i;
+
+//            foreach(int x in brr)
+//            {
+//                Console.Write(x+ " ");
+//            }
+//        }
+//    }
+//}
+
+
