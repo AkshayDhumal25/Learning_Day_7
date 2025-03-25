@@ -404,16 +404,79 @@
 
 
 //*********************** Dynamic ***********
+//using System;
+//namespace Types
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            dynamic name = "Akshay";
+//            name = 10;
+//            Console.WriteLine(name);
+
+//        }
+//    }
+//}
+
+
+//2. Swap Values without using any variable a=10, b=12.
+//using System;
+//namespace logicals
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int a = 10;
+//            int b = 20;
+
+//            a = a + b; // 10+30 = 30
+//            b = a - b; // 30-20 = 10
+//            a = a - b; // 30-10 = 20
+
+//            Console.WriteLine($"A : {a} and B : {b}");
+//        }
+//    }
+//}
+
+
+
+// 
 using System;
-namespace Types
+namespace logicals
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            dynamic name = "Akshay";
-            name = 10;
-             
+            string str1 = "listen";
+            string str2 = "silent";
+
+            if(str1.Length != str2.Length)
+            {
+                Console.WriteLine("Invalid");
+                
+            }
+            else
+            {
+                int[] charCount = new int[256];
+                for(int i = 0; i < str1.Length; i++)
+                {
+                    charCount[str1[i]]++;
+                    charCount[str2[i]]++;
+                }
+
+                foreach(int i in charCount)
+                {
+                    if(i != 0)
+                    {
+                        Console.WriteLine("Not Anagram");
+                    }
+                }
+                Console.WriteLine("Anagram");
+
+            }
         }
     }
 }
