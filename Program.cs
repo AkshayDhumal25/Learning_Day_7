@@ -321,4 +321,99 @@
 //    }
 //}
 
+//Logicals
+// 2. WAP to reverse an integer without converting it to a string, without using any built-in methods.
+//using System;
+//namespace logicals
+//{
+//    class Program
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Console.WriteLine("Enter the input : ");
+//            var n = Convert.ToInt32(Console.ReadLine());
+//            string temp = "";
+//            while (n > 0)
+//            {
+//                temp += n % 10;
+//                n = n / 10;
+//            }
+//            Console.WriteLine(temp);
 
+//        }
+//    }
+//}
+
+
+
+//*********************** Nullable Types *********************
+//using System;
+//namespace nullableTypes
+//{
+//    class Program
+//    {
+//        static void Main()
+//        {
+//            //string Name = null;
+//            //int i = null;      // Non-nullable value types
+//            //int? i = null;
+//            bool? AreYouMajor = false;
+//            if(AreYouMajor == true)
+//            {
+//                Console.WriteLine("User is Major");
+//            }else if(AreYouMajor == false)
+//            {
+//                Console.WriteLine("User is Not Major");
+//            }
+//            else
+//            {
+//                Console.WriteLine("User is Did not answer the question");
+//            }
+
+
+
+//        }
+//    }
+//}
+
+
+//using System;
+//namespace nullableTypes
+//{
+//    class Program
+//    {
+//        static void Main()
+//        {
+//            int? TicketsOnSale = 10;  //10
+
+//            int AvaialableTickets;
+
+//            if (TicketsOnSale == null)
+//            {
+//                AvaialableTickets = 0;
+//            }
+//            else
+//            {
+//                AvaialableTickets = TicketsOnSale.Value;
+//            }
+
+//            Console.WriteLine($"AvaialableTickets = {AvaialableTickets}");
+//        }
+//    }
+//}
+
+
+//*********************** Dynamic ***********
+using System;
+namespace Types
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            dynamic name = "Akshay";
+            name = 10;
+             
+        }
+    }
+}
